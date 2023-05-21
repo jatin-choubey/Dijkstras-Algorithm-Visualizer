@@ -1,13 +1,14 @@
-# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dijkstra's Algorithm visualizer.
+# Dijkstra's Algorithm visualizer.
+### The Green block 🟩 represnts the starting node.
+### The Red block 🟥 represents the ending node.
+### The black box ⬛ represents the wall.
+![Dijkstra_gif](https://github.com/jatin-choubey/Dijkstras-Algorithm-Visualizer/assets/89119355/11ce312d-b003-4b0f-bc52-827e59417cb1)
 
+## Please star the repo if you liked it :3
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Dijkstra_gif](https://github.com/jatin-choubey/Dijkstras-Algorithm-Visualizer/assets/89119355/11ce312d-b003-4b0f-bc52-827e59417cb1)
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
 
 In the project directory, you can run:
 
