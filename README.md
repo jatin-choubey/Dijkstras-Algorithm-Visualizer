@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dijkstra's Algorithm visualizer.
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Dijkstra_gif](https://github.com/jatin-choubey/Dijkstras-Algorithm-Visualizer/assets/89119355/11ce312d-b003-4b0f-bc52-827e59417cb1)
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
