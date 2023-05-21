@@ -24,10 +24,33 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Dijkstra's Algo</title>
   </head>
+  <link rel="stylesheet" href="index.css">
   <body>
+    <h1>
+      <a href="https://en.wikipedia.org/wiki/Dijkstra's_algorithm">Dijkstra's Algorithm</a>
+    </h1>
+    <p>Dijkstra's algorithm allows us to find the shortest path between any two vertices of a graph.</p>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <div class="container">
+      <div class="item">
+        <div class="green-block"></div>
+        <span class="label">Start</span>
+      </div>
+      <div class="item">
+        <div class="red-block"></div>
+        <span class="label">Finish</span>
+      </div>
+      <div class="item">
+        <div class="black-box"></div>
+        <span class="label">Wall</span>
+      </div>
+    </div>
+
+    <hr>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

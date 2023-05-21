@@ -1,0 +1,50 @@
+body{
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .green-block,
+  .red-block,
+  .black-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .green-block {
+    background-color: green;
+  }
+  
+  .red-block {
+    background-color: red;
+  }
+  
+  .black-box {
+    background-color: black;
+  }
+  
+  .label {
+    font-size: 18px;
+    color: black;
+  }
+  
