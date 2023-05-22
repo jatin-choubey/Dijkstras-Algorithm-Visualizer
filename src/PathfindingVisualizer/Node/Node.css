@@ -34,6 +34,7 @@
     25% {
         transform: scale(0.5);
         background-color: #fdd806;
+        border-radius: 50%;
     }
   
     /* 50% {
@@ -53,6 +54,7 @@
   }
   
   .node-wall {
+    border-radius: 100%;
     background-color: rgb(0, 0, 0);
   }
   
@@ -70,16 +72,19 @@
   @keyframes shortestPath {
     0% {
       transform: scale(0.6);
+      border-radius: 50%;
       background-color:rgb(7, 251, 15);
     }
   
     50% {
       transform: scale(1.2);
+      border-radius: 50%;
       background-color: rgb(255, 255, 255);
     }
 
     75%{
       transform: scale(0.8);
+      border-radius: 50%;
       background-color: rgb(241, 84, 11);
     }
     
