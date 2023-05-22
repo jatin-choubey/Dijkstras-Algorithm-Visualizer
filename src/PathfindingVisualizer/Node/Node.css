@@ -33,22 +33,22 @@
 
     25% {
         transform: scale(0.5);
-        background-color: #ff4e03;
+        background-color: #fdd806;
     }
   
-    50% {
+    /* 50% {
         transform: scale(1.2);
       background-color: #590696;
-    }
+    } */
   
     75% {
       transform: scale(1);
-      background-color: #C70A80;
+      background-color: #ddfa35d2;
     }
   
     100% {
       transform: scale(1);
-      background-color: #cdedf8;
+      background-color: #60d4fa;
     }
   }
   
@@ -70,13 +70,19 @@
   @keyframes shortestPath {
     0% {
       transform: scale(0.6);
-      background-color: rgb(254, 119, 56);
+      background-color:rgb(7, 251, 15);
     }
   
     50% {
       transform: scale(1.2);
-      background-color: rgb(65, 164, 235);
+      background-color: rgb(255, 255, 255);
     }
+
+    75%{
+      transform: scale(0.8);
+      background-color: rgb(241, 84, 11);
+    }
+    
   
     100% {
       transform: scale(1);
