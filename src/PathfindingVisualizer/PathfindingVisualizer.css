@@ -1,3 +1,39 @@
 .grid {
     margin: 20px 0 0;
 }
+
+/* BUTTON */
+.custom-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .custom-button:hover {
+    background-color: #455ca0;
+  }
+  
+  .custom-button:focus {
+    outline: none;
+  }
+  
+
+/* ANIMATION SPEED INPUT */
+.custom-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4caf50;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .custom-input:focus {
+    outline: none;
+    border-color: #44a447;
+  }
+  
