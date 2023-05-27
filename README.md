@@ -1,7 +1,7 @@
 # Dijkstra's Algorithm visualizer.
 ### The Green block 🟩 represnts the starting node.
 ### The Red block 🟥 represents the ending node.
-### The Black circle ⚫ represents the wall.
+### The Black block ⬛ represents the wall.
 ![Dijkstra_gif](https://github.com/jatin-choubey/Dijkstras-Algorithm-Visualizer/assets/89119355/11ce312d-b003-4b0f-bc52-827e59417cb1)
 
 ## Please star the repo if you liked it :3
