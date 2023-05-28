@@ -24,16 +24,36 @@
   
 
 /* ANIMATION SPEED INPUT */
-.custom-input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #4caf50;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-  }
+.custom-slider-container {
+  margin-top: 20px;
+}
+
+.custom-slider{
+  width: 100%;
+  background-color: #80f690;
   
-  .custom-input:focus {
-    outline: none;
-    border-color: #44a447;
-  }
-  
+}
+
+
+.slider-container {
+  position: relative;
+  width: 12%;
+  margin: 0 auto;
+}
+
+.slider-container .slider-label {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.slider-container:hover .slider-label {
+  display: block;
+}
