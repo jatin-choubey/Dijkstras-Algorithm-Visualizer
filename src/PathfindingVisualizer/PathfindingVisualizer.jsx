@@ -4,9 +4,9 @@ import { dijkstra, getNodesInShortestPathOrder } from '../algorithms/dijkstra';
 import './PathfindingVisualizer.css';
 
 const START_NODE_ROW = 10;
-const START_NODE_COL = 15;
+const START_NODE_COL = 10;
 const FINISH_NODE_ROW = 10;
-const FINISH_NODE_COL = 35;
+const FINISH_NODE_COL = 40;
 
 export default class PathfindingVisualizer extends Component {
   constructor() {
@@ -14,7 +14,7 @@ export default class PathfindingVisualizer extends Component {
     this.state = {
       grid: [],
       mouseIsPressed: false,
-      animationSpeed: 5, // Default animation speed
+      animationSpeed: 7, // Default animation speed
     };
   }
 
@@ -58,7 +58,6 @@ export default class PathfindingVisualizer extends Component {
   }
 
   animateShortestPath(nodesInShortestPathOrder) {
-
     for (let i = 0; i < nodesInShortestPathOrder.length; i++) {
       setTimeout(() => {
         const node = nodesInShortestPathOrder[i];
@@ -77,9 +76,8 @@ export default class PathfindingVisualizer extends Component {
     this.animateDijkstra(visitedNodesInOrder, nodesInShortestPathOrder);
   }
 
-  setAnimationSpeed(event) {
-    const speed = parseInt(event.target.value);
-    this.setState({ animationSpeed: speed });
+  setAnimationSpeed(value) {
+    this.setState({ animationSpeed: value });
   }
 
   render() {
@@ -87,13 +85,17 @@ export default class PathfindingVisualizer extends Component {
 
     return (
       <>
-        <input
-        className="custom-input"
-          type="number"
-          value={animationSpeed}
-          placeholder="Animation Speed"
-          onChange={(event) => this.setAnimationSpeed(event)}
-        />
+        <div className="slider-container">
+          <input
+            className="custom-slider"
+            type="range"
+            min="1"
+            max="1000"
+            value={animationSpeed}
+            onChange={(event) => this.setAnimationSpeed(event.target.value)}
+          />
+          <div className="slider-label"> Speed : {animationSpeed}</div>
+        </div>
         <button className="custom-button" onClick={() => this.visualizeDijkstra()}>
           Visualize Dijkstra's Algorithm
         </button>
@@ -111,15 +113,11 @@ export default class PathfindingVisualizer extends Component {
                       isStart={isStart}
                       isWall={isWall}
                       mouseIsPressed={mouseIsPressed}
-                      onMouseDown={(row, col) =>
-                        this.handleMouseDown(row, col)
-                      }
-                      onMouseEnter={(row, col) =>
-                        this.handleMouseEnter(row, col)
-                      }
+                      onMouseDown={(row, col) => this.handleMouseDown(row, col)}
+                      onMouseEnter={(row, col) => this.handleMouseEnter(row, col)}
                       onMouseUp={() => this.handleMouseUp()}
                       row={row}
-                    ></Node>
+                    />
                   );
                 })}
               </div>
